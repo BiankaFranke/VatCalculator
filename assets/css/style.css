@@ -1,0 +1,90 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #e0e0e0;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    padding: 15px;
+    color: #283739;
+}
+
+h2, h3 {
+    padding-top: 0.5rem;
+    color: #283739;
+}
+
+#first, #third {
+    display: flex;
+    flex-direction: column;
+}
+
+.auswahlNettoBrutto, #second {
+    padding: 0.2rem 0.5rem;
+}
+
+span {
+    color: red;
+}
+
+/* Form, Button and Input */
+
+form {
+    border: #283739;
+}
+
+#button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 0.8rem 0rem;
+}
+
+input[type=submit] {
+    padding: 0.7rem 0rem;
+    /* min-width: 30vw; */
+    min-width: 95%;
+    border: none;
+    background-color: rgb(94, 94, 171);
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type=reset] {
+    margin-top: 0.2rem;
+    padding: 0.7rem 0rem;
+    background-color: rgb(94, 94, 171);
+    border-radius: 0.5rem;
+    min-width: 95%;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type=text] {
+    width: 5rem;
+}
+
+fieldset {
+    border: 3px solid white;
+}
+
+#betrag, #endpreis {
+    color: #2c5d63;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehrwertsteuer-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Mehrwertsteuer-Rechner</h1>
+      <form>
+        <fieldset>
+          <section>
+            <label for="berechnung">Was soll berechnet werden?</label>
+            <div id="first">
+              <div class="auswahlNettoBrutto">
+                <input
+                  type="radio"
+                  id="nettoBrutto"
+                  name="radioBtnBerechnung"
+                  value="nettoBrutto"
+                />
+                <label for="nettoBrutto"
+                  >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
+                >
+              </div>
+              <div class="auswahlNettoBrutto">
+                <input
+                  type="radio"
+                  id="bruttoNetto"
+                  name="radioBtnBerechnung"
+                  value="bruttoNetto"
+                />
+                <label for="bruttoNetto"
+                  >Mehrwertsteuer abziehen (Brutto zu Netto)</label
+                >
+              </div>
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <section>
+            <label for="steuersatz">Mehrwertsteuersatz</label>
+            <div id="second">
+              <input
+                type="radio"
+                id="nineteen"
+                name="steuersatz"
+                value="nineteen"
+              />
+              <label for="nineteen">19%</label>
+              <input type="radio" id="seven" name="steuersatz" value="seven" />
+              <label for="seven">7%</label>
+            </div>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <section id="third">
+            <label for="nettoBetrag" id="labelNettoBetrag"
+              >Nettobetrag (Preis ohne Mehrwertsteuer) in Euro
+              <span>*</span></label
+            >
+            <input type="text" placeholder="10,00" id="nettoBetrag" required />
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <section id="button">
+            <input
+              type="submit"
+              value="Berechnen"
+              id="btn"
+              onclick="myFunction(event)"
+            />
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <section id="ergebnis">
+            <h2>Ergebnis</h2>
+            <div>
+              <h3>Mehrwertsteuerbetrag</h3>
+              <p id="betrag">0.00€</p>
+            </div>
+            <div>
+              <h3 id="headerEndpreis">Bruttobetrag (Endpreis)</h3>
+              <p id="endpreis">0.00€</p>
+            </div>
+          </section>
+        </fieldset>
+      </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
